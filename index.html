@@ -32,7 +32,7 @@
       cursor: none;
     }
 
-    /* ── Custom cursor ── */
+    /* Custom cursor */
     .cursor {
       width: 12px; height: 12px;
       background: var(--accent-glow);
@@ -51,7 +51,7 @@
       transition: transform 0.35s cubic-bezier(.2,.8,.4,1), opacity 0.2s;
     }
 
-    /* ── Noise overlay ── */
+    /* Noise overlay */
     body::before {
       content: '';
       position: fixed; inset: 0;
@@ -59,14 +59,14 @@
       pointer-events: none; z-index: 0; opacity: 0.5;
     }
 
-    /* ── Animated starfield canvas ── */
+    /* Animated starfield canvas */
     #starfield {
       position: fixed; inset: 0;
       z-index: 0; pointer-events: none;
       opacity: 0.6;
     }
 
-    /* ── NAV ── */
+    /* NAV */
     nav {
       position: fixed; top: 0; left: 0; right: 0;
       z-index: 100;
@@ -119,7 +119,7 @@
     }
     .btn-ghost:hover { color: var(--text); border-color: rgba(108,92,231,0.4); }
 
-    /* ── HERO ── */
+    /* HERO */
     .hero {
       min-height: 100vh;
       display: flex; align-items: center; justify-content: center;
@@ -239,7 +239,7 @@
       margin-top: 4px; text-transform: uppercase; letter-spacing: 0.06em;
     }
 
-    /* ── MASCOT GALLERY ── */
+    /* MASCOT GALLERY */
     .mascot-section {
       padding: 80px 60px;
       position: relative; overflow: hidden;
@@ -310,7 +310,7 @@
     }
     .mascot-card:hover .mascot-shine { left: 130%; }
 
-    /* ── FEATURES ── */
+    /* FEATURES */
     section { padding: 120px 60px; position: relative; }
     .section-label {
       font-size: 0.75rem; text-transform: uppercase;
@@ -379,7 +379,7 @@
       font-size: 3rem;
     }
 
-    /* ── COMMANDS ── */
+    /* COMMANDS */
     .cmd-category { margin-bottom: 48px; }
     .cmd-cat-header {
       display: flex; align-items: center; gap: 12px;
@@ -409,7 +409,7 @@
     }
     .cmd-desc { font-size: 0.82rem; color: var(--muted); line-height: 1.5; }
 
-    /* ── CTA ── */
+    /* CTA */
     .cta-section {
       text-align: center;
       background: var(--surface);
@@ -437,7 +437,7 @@
     }
     .cta-btns { display: flex; gap: 14px; justify-content: center; position: relative; }
 
-    /* ── FOOTER ── */
+    /* FOOTER */
     footer {
       padding: 40px 60px; border-top: 1px solid var(--border);
       display: flex; align-items: center; justify-content: space-between;
@@ -455,14 +455,14 @@
     .footer-links a:hover { color: var(--text); }
     .footer-copy { color: var(--muted); font-size: 0.8rem; }
 
-    /* ── Scroll reveal ── */
+    /* Scroll reveal */
     .reveal {
       opacity: 0; transform: translateY(30px);
       transition: opacity 0.7s cubic-bezier(.2,.8,.4,1), transform 0.7s cubic-bezier(.2,.8,.4,1);
     }
     .reveal.visible { opacity: 1; transform: translateY(0); }
 
-    /* ── Responsive ── */
+    /* Responsive */
     @media (max-width: 900px) {
       nav { padding: 16px 24px; }
       .nav-links { display: none; }
