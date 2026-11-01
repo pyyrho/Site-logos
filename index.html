@@ -32,7 +32,7 @@
       cursor: none;
     }
 
-    /* ── Custom cursor ── */
+    
     .cursor {
       width: 12px; height: 12px;
       background: var(--accent-glow);
@@ -51,7 +51,7 @@
       transition: transform 0.35s cubic-bezier(.2,.8,.4,1), opacity 0.2s;
     }
 
-    /* ── Noise overlay ── */
+    
     body::before {
       content: '';
       position: fixed; inset: 0;
@@ -59,14 +59,14 @@
       pointer-events: none; z-index: 0; opacity: 0.5;
     }
 
-    /* ── Animated starfield canvas ── */
+    
     #starfield {
       position: fixed; inset: 0;
       z-index: 0; pointer-events: none;
       opacity: 0.6;
     }
 
-    /* ── NAV ── */
+    
     nav {
       position: fixed; top: 0; left: 0; right: 0;
       z-index: 100;
@@ -119,7 +119,7 @@
     }
     .btn-ghost:hover { color: var(--text); border-color: rgba(108,92,231,0.4); }
 
-    /* ── HERO ── */
+    
     .hero {
       min-height: 100vh;
       display: flex; align-items: center; justify-content: center;
@@ -239,7 +239,7 @@
       margin-top: 4px; text-transform: uppercase; letter-spacing: 0.06em;
     }
 
-    /* ── MASCOT GALLERY ── */
+    
     .mascot-section {
       padding: 80px 60px;
       position: relative; overflow: hidden;
@@ -310,7 +310,7 @@
     }
     .mascot-card:hover .mascot-shine { left: 130%; }
 
-    /* ── FEATURES ── */
+    
     section { padding: 120px 60px; position: relative; }
     .section-label {
       font-size: 0.75rem; text-transform: uppercase;
@@ -379,7 +379,7 @@
       font-size: 3rem;
     }
 
-    /* ── COMMANDS ── */
+    
     .cmd-category { margin-bottom: 48px; }
     .cmd-cat-header {
       display: flex; align-items: center; gap: 12px;
@@ -409,7 +409,7 @@
     }
     .cmd-desc { font-size: 0.82rem; color: var(--muted); line-height: 1.5; }
 
-    /* ── CTA ── */
+    
     .cta-section {
       text-align: center;
       background: var(--surface);
@@ -437,7 +437,7 @@
     }
     .cta-btns { display: flex; gap: 14px; justify-content: center; position: relative; }
 
-    /* ── FOOTER ── */
+    
     footer {
       padding: 40px 60px; border-top: 1px solid var(--border);
       display: flex; align-items: center; justify-content: space-between;
@@ -455,14 +455,14 @@
     .footer-links a:hover { color: var(--text); }
     .footer-copy { color: var(--muted); font-size: 0.8rem; }
 
-    /* ── Scroll reveal ── */
+    
     .reveal {
       opacity: 0; transform: translateY(30px);
       transition: opacity 0.7s cubic-bezier(.2,.8,.4,1), transform 0.7s cubic-bezier(.2,.8,.4,1);
     }
     .reveal.visible { opacity: 1; transform: translateY(0); }
 
-    /* ── Responsive ── */
+    
     @media (max-width: 900px) {
       nav { padding: 16px 24px; }
       .nav-links { display: none; }
@@ -486,7 +486,7 @@
   <div class="cursor" id="cursor"></div>
   <div class="cursor-ring" id="cursorRing"></div>
 
-  <!-- NAV -->
+  
   <nav>
     <div class="nav-logo">Logos</div>
     <ul class="nav-links">
@@ -501,7 +501,7 @@
     </a>
   </nav>
 
-  <!-- HERO -->
+  
   <section class="hero">
     <div class="hero-bg">
       <div class="orb orb-1"></div>
@@ -541,7 +541,7 @@
     </div>
   </section>
 
-  <!-- MASCOT GALLERY -->
+  
   <div class="mascot-section" id="mascot">
     <div class="mascot-label reveal">Nossa mascote</div>
     <div class="mascot-title reveal">Conheça a <span>Logos</span></div>
@@ -569,7 +569,7 @@
     </div>
   </div>
 
-  <!-- FEATURES -->
+  
   <section id="features">
     <div style="max-width:1200px; margin:0 auto;">
       <div class="reveal">
@@ -630,7 +630,7 @@
     </div>
   </section>
 
-  <!-- COMMANDS -->
+  
   <section id="commands" style="background: var(--surface); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
     <div style="max-width:1100px; margin:0 auto;">
       <div class="reveal" style="text-align:center; margin-bottom: 56px;">
@@ -639,7 +639,7 @@
         <p class="section-sub" style="margin: 0 auto;">Todos os comandos são slash commands (<code style="background:rgba(108,92,231,0.15);padding:2px 8px;border-radius:6px;font-size:.85rem;">/comando</code>)</p>
       </div>
 
-      <!-- Moderação -->
+      
       <div class="cmd-category reveal">
         <div class="cmd-cat-header"><span class="cmd-cat-icon">🔨</span><span class="cmd-cat-title">Moderação</span></div>
         <div class="cmd-grid">
@@ -656,7 +656,7 @@
         </div>
       </div>
 
-      <!-- AutoMod -->
+      
       <div class="cmd-category reveal" style="transition-delay:.05s">
         <div class="cmd-cat-header"><span class="cmd-cat-icon">🛡️</span><span class="cmd-cat-title">AutoMod</span></div>
         <div class="cmd-grid">
@@ -664,7 +664,7 @@
         </div>
       </div>
 
-      <!-- Boas-vindas -->
+      
       <div class="cmd-category reveal" style="transition-delay:.1s">
         <div class="cmd-cat-header"><span class="cmd-cat-icon">👋</span><span class="cmd-cat-title">Boas-vindas</span></div>
         <div class="cmd-grid">
@@ -674,7 +674,7 @@
         </div>
       </div>
 
-      <!-- XP & Níveis -->
+      
       <div class="cmd-category reveal" style="transition-delay:.15s">
         <div class="cmd-cat-header"><span class="cmd-cat-icon">⭐</span><span class="cmd-cat-title">XP & Níveis</span></div>
         <div class="cmd-grid">
@@ -689,7 +689,7 @@
         </div>
       </div>
 
-      <!-- Tickets -->
+      
       <div class="cmd-category reveal" style="transition-delay:.2s">
         <div class="cmd-cat-header"><span class="cmd-cat-icon">🎫</span><span class="cmd-cat-title">Tickets</span></div>
         <div class="cmd-grid">
@@ -699,7 +699,7 @@
         </div>
       </div>
 
-      <!-- Música -->
+      
       <div class="cmd-category reveal" style="transition-delay:.22s">
         <div class="cmd-cat-header"><span class="cmd-cat-icon">🎵</span><span class="cmd-cat-title">Música</span></div>
         <div class="cmd-grid">
@@ -717,7 +717,7 @@
         </div>
       </div>
 
-      <!-- Embeds -->
+      
       <div class="cmd-category reveal" style="transition-delay:.25s">
         <div class="cmd-cat-header"><span class="cmd-cat-icon">✨</span><span class="cmd-cat-title">Embeds</span></div>
         <div class="cmd-grid">
@@ -727,7 +727,7 @@
         </div>
       </div>
 
-      <!-- Interações -->
+      
       <div class="cmd-category reveal" style="transition-delay:.3s">
         <div class="cmd-cat-header"><span class="cmd-cat-icon">💞</span><span class="cmd-cat-title">Interações</span></div>
         <div class="cmd-grid">
@@ -749,7 +749,7 @@
         </div>
       </div>
 
-      <!-- Utilitários -->
+      
       <div class="cmd-category reveal" style="transition-delay:.35s">
         <div class="cmd-cat-header"><span class="cmd-cat-icon">🔧</span><span class="cmd-cat-title">Utilitários</span></div>
         <div class="cmd-grid">
@@ -768,7 +768,7 @@
     </div>
   </section>
 
-  <!-- CTA -->
+  
   <section class="cta-section" id="cta">
     <div class="cta-inner">
       <div class="cta-glow"></div>
@@ -783,7 +783,7 @@
     </div>
   </section>
 
-  <!-- FOOTER -->
+  
   <footer>
     <div class="footer-logo">Logos</div>
     <ul class="footer-links">
@@ -796,7 +796,7 @@
   </footer>
 
   <script>
-    // ── Starfield animado ──
+    
     const canvas = document.getElementById('starfield');
     const ctx = canvas.getContext('2d');
     let W, H, stars = [];
@@ -851,7 +851,7 @@
     }
     drawStars();
 
-    // ── Custom cursor ──
+    
     const cursor = document.getElementById('cursor');
     const ring   = document.getElementById('cursorRing');
     let mx = 0, my = 0, rx = 0, ry = 0;
@@ -884,7 +884,7 @@
       });
     });
 
-    // ── Scroll reveal ──
+    
     const reveals = document.querySelectorAll('.reveal');
     const observer = new IntersectionObserver(entries => {
       entries.forEach((e, i) => {
